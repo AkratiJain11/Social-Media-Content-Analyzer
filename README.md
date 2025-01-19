@@ -41,8 +41,10 @@ This is a Social Media Content Analyzer application that allows users to upload 
 
 3. **Get Your Apyhub key and Edit with mine**
 
+   Create .env file on root directory and add a variable with name ***VITE_APYHUB_PDF_TO_TEXT_TOKEN***
 
-4. **Start the development server**:
+
+5. **Start the development server**:
 
    ```bash
    npm run dev
