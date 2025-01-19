@@ -7,6 +7,7 @@ import TextInfo from "./TextInfo";
 
 function App() {
   const [mode, setMode] = useState("pdf");
+  // hi
   return (
     <div className="font-sans">
       <Navbar mode={mode} setMode={setMode} />
