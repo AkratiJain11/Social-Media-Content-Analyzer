@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { FileUploader } from "react-drag-drop-files";
 
 const UploadPdfPage = () => {
@@ -6,7 +6,7 @@ const UploadPdfPage = () => {
   const [uploadProgress, setUploadProgress] = useState(0);
   const [extractedText, setExtractedText] = useState("");
   const [disableButton, setDisableButton] = useState(false);
-
+  
   const handleFileDrop = (file) => {
     console.log(file);
 
@@ -21,13 +21,13 @@ const UploadPdfPage = () => {
 
     try {
       setUploadProgress(50);
+
       const response = await fetch(
         "https://api.apyhub.com/extract/text/pdf-file",
         {
           method: "POST",
           headers: {
-            "apy-token":
-              "APY0aTorwxWr1mnc7qsSPtSOekcatJUOraVbU0NeIG3ocgsf9l56YF5vCPaj7X0neHs77oco",
+            "apy-token": import.meta.env.VITE_APYHUB_PDF_TO_TEXT_TOKEN,
           },
           body: form,
         }
@@ -39,7 +39,7 @@ const UploadPdfPage = () => {
 
       const data = await response.json();
       setExtractedText(data.data || ""); // Assuming API returns extracted text under 'text' key
-      console.log(data.data);
+      // console.log(data.data);
 
       setUploadProgress(100); // Mark upload as complete
     } catch (error) {
