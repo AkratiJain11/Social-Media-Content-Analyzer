@@ -1,0 +1,68 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependency directories
+node_modules/
+.pnp/
+.pnp.js
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Build output
+build/
+dist/
+
+# Static files
+*.log
+
+# Cache directories
+.cache/
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+
+# Miscellaneous
+*.pem
+*.crt
+*.key
+
+# Parcel-bundler cache
+.cache/
+
+# Storybook files
+storybook-static/
+
+# Temporary files
+*.tmp
+*.temp
+
+# React Native specific files
+*.expo/
