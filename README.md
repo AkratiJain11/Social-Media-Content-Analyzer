@@ -31,7 +31,7 @@ This is a Social Media Content Analyzer application that allows users to upload 
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/<your-username>/social-media-content-analyzer.git
+   git clone https://github.com/Akratijain13/social-media-content-analyzer.git
    cd social-media-content-analyzer
    
 2. **Install Dependencies**:
