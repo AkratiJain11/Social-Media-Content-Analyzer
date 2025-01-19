@@ -6,7 +6,7 @@ const UploadPdfPage = () => {
   const [uploadProgress, setUploadProgress] = useState(0);
   const [extractedText, setExtractedText] = useState("");
   const [disableButton, setDisableButton] = useState(false);
-  
+  console.log(import.meta.env.VITE_APYHUB_PDF_TO_TEXT_TOKEN)
   const handleFileDrop = (file) => {
     console.log(file);
 
